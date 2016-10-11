@@ -15,6 +15,7 @@
 		D82C827D1DAC3E9100081293 /* bisonSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C827C1DAC3E9100081293 /* bisonSwiftTests.swift */; };
 		D82C82881DAC3E9100081293 /* bisonSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C82871DAC3E9100081293 /* bisonSwiftUITests.swift */; };
 		D82C82961DAC3FA900081293 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D82C82951DAC3FA900081293 /* GoogleService-Info.plist */; };
+		D87546A81DAD8D0D00945837 /* locationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87546A71DAD8D0D00945837 /* locationHandler.swift */; };
 		D8B2A77C1DAC8EB9006ADA3A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2A77B1DAC8EB9006ADA3A /* DataService.swift */; };
 		D8B2A7801DAC9C47006ADA3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2A77F1DAC9C47006ADA3A /* User.swift */; };
 		D8B2A7821DAC9CEC006ADA3A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2A7811DAC9CEC006ADA3A /* Database.swift */; };
@@ -55,6 +56,7 @@
 		D82C82871DAC3E9100081293 /* bisonSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bisonSwiftUITests.swift; sourceTree = "<group>"; };
 		D82C82891DAC3E9100081293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D82C82951DAC3FA900081293 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D87546A71DAD8D0D00945837 /* locationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationHandler.swift; sourceTree = "<group>"; };
 		D8B2A77B1DAC8EB9006ADA3A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D8B2A77F1DAC9C47006ADA3A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D8B2A7811DAC9CEC006ADA3A /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				D8B2A7841DACA5DD006ADA3A /* MainTableViewController.swift */,
+				D87546A71DAD8D0D00945837 /* locationHandler.swift */,
 				D82C82951DAC3FA900081293 /* GoogleService-Info.plist */,
 				D82C82671DAC3E9100081293 /* AppDelegate.swift */,
 				D8B2A77B1DAC8EB9006ADA3A /* DataService.swift */,
@@ -365,6 +368,7 @@
 				D8B2A7851DACA5DD006ADA3A /* MainTableViewController.swift in Sources */,
 				D8B2A7821DAC9CEC006ADA3A /* Database.swift in Sources */,
 				D8B2A77C1DAC8EB9006ADA3A /* DataService.swift in Sources */,
+				D87546A81DAD8D0D00945837 /* locationHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,15 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import FirebaseAuth
+import CoreLocation
 
-class MainTableViewController: UITableViewController {
-    
+class MainTableViewController: UITableViewController, CLLocationManagerDelegate {
+    // members
     var dbRef:FIRDatabaseReference!
-
+    private var locationManager = CLLocationManager();
+  
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dbRef = FIRDatabase.database().reference().child("yak-posts")
@@ -39,6 +43,17 @@ class MainTableViewController: UITableViewController {
             
             print("user logged in with uid: " + user!.uid);
         }
+        
+        
+        
+        
+        
+        // init location manager
+        locationManager.delegate = self;
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        locationManager.requestAlwaysAuthorization();
+        locationManager.startUpdatingLocation();
+        
         
     }
     
@@ -66,13 +81,20 @@ class MainTableViewController: UITableViewController {
         self.present(yakAlert, animated: true, completion: nil);
     }
     
+
     
     
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - CLLocationManager
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var userLocation:CLLocation = locations[0] as! CLLocation;
+        let long = userLocation.coordinate.longitude;
+        let lat = userLocation.coordinate.latitude;
+        
+        
     }
+    
 
     // MARK: - Table view data source
 
