@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 import FirebaseAuth
 
 class MainTableViewController: UITableViewController {
@@ -21,8 +22,6 @@ class MainTableViewController: UITableViewController {
         // firebase shit
         let firebaseRef = FIRDatabase.database().reference();
         
-        firebaseRef.child("newChild").setValue("test value");
-        firebaseRef.child("newArry").setValue(["Mother", "Fucking","Array"]);
         
         // looks for children being added
         firebaseRef.observe(.childAdded, with: { (snapshot) in
@@ -46,22 +45,25 @@ class MainTableViewController: UITableViewController {
     
     // handles adding new posts on button press
     @IBAction func addYak(_ sender: AnyObject) {
-        let yakAlert = UIAlertController(title: "New Yak", message: "Enter your yak", preferredStyle: .alert)
+        
+        let yakAlert = UIAlertController(title: "New Yak", message: "Enter your yak", preferredStyle: .alert);
+        
         yakAlert.addTextField { (textField:UITextField) in
             textField.placeholder = "your post"
         }
+        
         yakAlert.addAction(UIAlertAction(title: "Send", style: .default, handler: { (action:UIAlertAction) in
-            let yakContent = yakAlert.textFields?.first?.text {
+            if let yakContent = yakAlert.textFields?.first?.text {
                 let yak = Yak(content: yakContent, addedByUser: "username")
                 
-                let yakRef = self.dbRef.child(yakContent.lowercaseString)
+                let yakRef = self.dbRef.child(yakContent.lowercased())
                 
                 yakRef.setValue(yak.toAnyObject())
             }
         
         }))
         
-        self.presentedViewController(yakAlert, animated: true, completion: nil)
+        self.present(yakAlert, animated: true, completion: nil);
     }
     
     

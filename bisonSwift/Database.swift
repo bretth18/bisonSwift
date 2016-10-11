@@ -17,7 +17,7 @@ struct Yak {
     let addedByUser:String!;
     let itemRef:FIRDatabaseReference? // arbitrary
     
-    init (content:String, addedByUser:String, key:String) {
+    init (content:String, addedByUser:String, key:String = "") {
         self.key = key;
         self.content = content;
         self.addedByUser = addedByUser;
@@ -28,21 +28,24 @@ struct Yak {
         key = snapshot.key;
         itemRef = snapshot.ref;
         
-        if let yakContent = snapshot.value!["content"] as? String {
-            content = yakContent;
+        // cast type from Any to NSDict
+        let snapshotValue = snapshot.value as? NSDictionary;
+        
+        if let yakContent = snapshotValue!["content"] as? String {
+            content = yakContent
         } else {
             content = ""
         }
         
-        if let yakUser = snapshot.value!["addedByUser"] as? String {
+        if let yakUser = snapshotValue!["addedByUser"] as? String {
             addedByUser = yakUser;
         } else {
-            content = ""
+            addedByUser = ""
         }
     }
     
-    func toAnyObject() -> AnyObject {
-        return ["content": content, "addedByUser": addedByUser]
+    func toAnyObject() -> NSDictionary {
+        return ["content": content, "addedByUser": addedByUser];
     }
 }
 
