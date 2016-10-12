@@ -2,8 +2,8 @@
  use_frameworks!
 
 target 'bisonSwift' do
-	pod 'Firebase/Core'
-	pod 'Firebase/Database'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
     pod 'Firebase/Auth'
 end
 
