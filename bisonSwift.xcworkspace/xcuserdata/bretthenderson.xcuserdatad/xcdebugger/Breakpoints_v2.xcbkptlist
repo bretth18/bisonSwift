@@ -15,8 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
             endingLineNumber = "90"
-            landmarkName = "locationManager(manager:didUpdateLocations:)"
-            landmarkType = "7">
+            landmarkName = "MainTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

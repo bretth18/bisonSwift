@@ -12,8 +12,6 @@
 		D82C826D1DAC3E9100081293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82C826B1DAC3E9100081293 /* Main.storyboard */; };
 		D82C826F1DAC3E9100081293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82C826E1DAC3E9100081293 /* Assets.xcassets */; };
 		D82C82721DAC3E9100081293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82C82701DAC3E9100081293 /* LaunchScreen.storyboard */; };
-		D82C827D1DAC3E9100081293 /* bisonSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C827C1DAC3E9100081293 /* bisonSwiftTests.swift */; };
-		D82C82881DAC3E9100081293 /* bisonSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C82871DAC3E9100081293 /* bisonSwiftUITests.swift */; };
 		D82C82961DAC3FA900081293 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D82C82951DAC3FA900081293 /* GoogleService-Info.plist */; };
 		D87546A81DAD8D0D00945837 /* locationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87546A71DAD8D0D00945837 /* locationHandler.swift */; };
 		D8B2A77C1DAC8EB9006ADA3A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2A77B1DAC8EB9006ADA3A /* DataService.swift */; };
@@ -22,23 +20,6 @@
 		D8B2A7851DACA5DD006ADA3A /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2A7841DACA5DD006ADA3A /* MainTableViewController.swift */; };
 		D8F3EC351DAC678400FBE039 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F3EC341DAC678400FBE039 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D82C82791DAC3E9100081293 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D82C825C1DAC3E9100081293 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D82C82631DAC3E9100081293;
-			remoteInfo = bisonSwift;
-		};
-		D82C82841DAC3E9100081293 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D82C825C1DAC3E9100081293 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D82C82631DAC3E9100081293;
-			remoteInfo = bisonSwift;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BBD8CFB124A0F28DB3D3C72F /* Pods-bisonSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bisonSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bisonSwift/Pods-bisonSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -49,10 +30,8 @@
 		D82C826E1DAC3E9100081293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D82C82711DAC3E9100081293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D82C82731DAC3E9100081293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D82C82781DAC3E9100081293 /* bisonSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bisonSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82C827C1DAC3E9100081293 /* bisonSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bisonSwiftTests.swift; sourceTree = "<group>"; };
 		D82C827E1DAC3E9100081293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D82C82831DAC3E9100081293 /* bisonSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bisonSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82C82871DAC3E9100081293 /* bisonSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bisonSwiftUITests.swift; sourceTree = "<group>"; };
 		D82C82891DAC3E9100081293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D82C82951DAC3FA900081293 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -71,20 +50,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B720EBBB86B0C5C87547109A /* Pods_bisonSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D82C82751DAC3E9100081293 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D82C82801DAC3E9100081293 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				D82C82641DAC3E9100081293 /* bisonSwift.app */,
-				D82C82781DAC3E9100081293 /* bisonSwiftTests.xctest */,
-				D82C82831DAC3E9100081293 /* bisonSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,42 +161,6 @@
 			productReference = D82C82641DAC3E9100081293 /* bisonSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D82C82771DAC3E9100081293 /* bisonSwiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D82C828F1DAC3E9100081293 /* Build configuration list for PBXNativeTarget "bisonSwiftTests" */;
-			buildPhases = (
-				D82C82741DAC3E9100081293 /* Sources */,
-				D82C82751DAC3E9100081293 /* Frameworks */,
-				D82C82761DAC3E9100081293 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D82C827A1DAC3E9100081293 /* PBXTargetDependency */,
-			);
-			name = bisonSwiftTests;
-			productName = bisonSwiftTests;
-			productReference = D82C82781DAC3E9100081293 /* bisonSwiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D82C82821DAC3E9100081293 /* bisonSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D82C82921DAC3E9100081293 /* Build configuration list for PBXNativeTarget "bisonSwiftUITests" */;
-			buildPhases = (
-				D82C827F1DAC3E9100081293 /* Sources */,
-				D82C82801DAC3E9100081293 /* Frameworks */,
-				D82C82811DAC3E9100081293 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D82C82851DAC3E9100081293 /* PBXTargetDependency */,
-			);
-			name = bisonSwiftUITests;
-			productName = bisonSwiftUITests;
-			productReference = D82C82831DAC3E9100081293 /* bisonSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,16 +175,6 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 94XUGF9CU7;
 						ProvisioningStyle = Automatic;
-					};
-					D82C82771DAC3E9100081293 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = D82C82631DAC3E9100081293;
-					};
-					D82C82821DAC3E9100081293 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = D82C82631DAC3E9100081293;
 					};
 				};
 			};
@@ -275,8 +192,6 @@
 			projectRoot = "";
 			targets = (
 				D82C82631DAC3E9100081293 /* bisonSwift */,
-				D82C82771DAC3E9100081293 /* bisonSwiftTests */,
-				D82C82821DAC3E9100081293 /* bisonSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,20 +205,6 @@
 				D82C826F1DAC3E9100081293 /* Assets.xcassets in Resources */,
 				D82C826D1DAC3E9100081293 /* Main.storyboard in Resources */,
 				D82C82961DAC3FA900081293 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D82C82761DAC3E9100081293 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D82C82811DAC3E9100081293 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,36 +273,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D82C82741DAC3E9100081293 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D82C827D1DAC3E9100081293 /* bisonSwiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D82C827F1DAC3E9100081293 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D82C82881DAC3E9100081293 /* bisonSwiftUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D82C827A1DAC3E9100081293 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D82C82631DAC3E9100081293 /* bisonSwift */;
-			targetProxy = D82C82791DAC3E9100081293 /* PBXContainerItemProxy */;
-		};
-		D82C82851DAC3E9100081293 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D82C82631DAC3E9100081293 /* bisonSwift */;
-			targetProxy = D82C82841DAC3E9100081293 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D82C826B1DAC3E9100081293 /* Main.storyboard */ = {
@@ -467,6 +339,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -510,6 +383,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -544,60 +418,6 @@
 			};
 			name = Release;
 		};
-		D82C82901DAC3E9100081293 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = bisonSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.bretth18.bisonSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bisonSwift.app/bisonSwift";
-			};
-			name = Debug;
-		};
-		D82C82911DAC3E9100081293 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = bisonSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.bretth18.bisonSwiftTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bisonSwift.app/bisonSwift";
-			};
-			name = Release;
-		};
-		D82C82931DAC3E9100081293 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = bisonSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.bretth18.bisonSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = bisonSwift;
-			};
-			name = Debug;
-		};
-		D82C82941DAC3E9100081293 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = bisonSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.bretth18.bisonSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = bisonSwift;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -615,24 +435,6 @@
 			buildConfigurations = (
 				D82C828D1DAC3E9100081293 /* Debug */,
 				D82C828E1DAC3E9100081293 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D82C828F1DAC3E9100081293 /* Build configuration list for PBXNativeTarget "bisonSwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D82C82901DAC3E9100081293 /* Debug */,
-				D82C82911DAC3E9100081293 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D82C82921DAC3E9100081293 /* Build configuration list for PBXNativeTarget "bisonSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D82C82931DAC3E9100081293 /* Debug */,
-				D82C82941DAC3E9100081293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

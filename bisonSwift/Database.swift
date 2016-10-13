@@ -12,9 +12,9 @@ import Firebase
 
 struct Yak {
     
-    let key:String!;
-    let content:String!;
-    let addedByUser:String!;
+    let key:String;
+    let content:String;
+    let addedByUser:String;
     let itemRef:FIRDatabaseReference? // arbitrary
     
     init (content:String, addedByUser:String, key:String = "") {
@@ -31,13 +31,13 @@ struct Yak {
         // cast type from Any to NSDict
         let snapshotValue = snapshot.value as? NSDictionary;
         
-        if let yakContent = snapshotValue!["content"] as? String {
+        if let yakContent = snapshotValue?["content"] as? String {
             content = yakContent
         } else {
             content = ""
         }
         
-        if let yakUser = snapshotValue!["addedByUser"] as? String {
+        if let yakUser = snapshotValue?["addedByUser"] as? String {
             addedByUser = yakUser;
         } else {
             addedByUser = ""

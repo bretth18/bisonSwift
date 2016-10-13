@@ -7,10 +7,3 @@ target 'bisonSwift' do
     pod 'Firebase/Auth'
 end
 
-target 'bisonSwiftTests' do
-
-end
-
-target 'bisonSwiftUITests' do
-
-end

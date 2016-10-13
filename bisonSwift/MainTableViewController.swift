@@ -15,6 +15,8 @@ import CoreLocation
 class MainTableViewController: UITableViewController, CLLocationManagerDelegate {
     // members
     var dbRef:FIRDatabaseReference!
+    
+    
     private var locationManager = CLLocationManager();
   
     
